@@ -12,7 +12,7 @@ on:
 
 jobs:
   deploy:
-    name: Client tests
+    name: Deploy to GitHub Pages
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
