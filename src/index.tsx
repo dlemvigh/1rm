@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GlobalStyles } from './global-styles';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Calculator } from './components/1rm/Calculator';
 
@@ -12,8 +12,7 @@ root.render(
   <React.StrictMode>
     <GlobalStyles />
     <Calculator />
-    {/* <App>
-    </App> */}
+    {/* <App /> */}
   </React.StrictMode>
 );
 
