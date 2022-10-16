@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { GlobalStyles } from './global-styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Calculator } from './components/1rm/Calculator';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyles />
-    <App />
+    <Calculator />
+    {/* <App>
+    </App> */}
   </React.StrictMode>
 );
 
