@@ -37,9 +37,18 @@ test.describe("Epley 1RM formula", () => {
 
   type TestCase = [number, number, number]; // [weight, reps, expected]
   const cases: TestCase[] = [
+    [1, 1, 1],
+    // [1, 4, 1.1], // FIXME: issue with floating point math
+    [1, 7, 1.2],
+    [1, 10, 1.3],
+    [1, 13, 1.4],
+    [1, 16, 1.5],
     [100, 1, 100],
-    // [100, 4, 110],
+    // [100, 4, 110], // FIXME: issue with floating point math
+    [100, 7, 120],
     [100, 10, 130],
+    [100, 13, 140],
+    [100, 16, 150],
   ]
 
   cases.forEach(([weight, reps, expected]) => {
