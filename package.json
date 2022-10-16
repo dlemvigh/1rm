@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "playwright test -c playwright-ct.config.ts",
+    "test:unit": "playwright test -c playwright-ct.config.ts unit.test",
     "test:func": "playwright test -c playwright-ct.config.ts func.test",
     "test:visual": "playwright test -c playwright-ct.config.ts visual.test",
     "deploy": "gh-pages -d build",
