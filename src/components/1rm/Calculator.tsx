@@ -10,9 +10,14 @@ const Container = styled.div`
 
 `
 
-export function Calculator() {
-  const [weight, setWeight] = useState<string>("");
-  const [reps, setReps] = useState<string>("");
+interface CalculatorProps {
+  defaultWeight?: string
+  defaultReps?: string
+}
+
+export function Calculator({ defaultWeight = "", defaultReps = ""}: CalculatorProps) {
+  const [weight, setWeight] = useState<string>(defaultWeight);
+  const [reps, setReps] = useState<string>(defaultReps);
 
   return (
     <Container>
